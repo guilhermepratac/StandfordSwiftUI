@@ -11,6 +11,8 @@
 		9255313C2B7DA20100466ADE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9255313B2B7DA20100466ADE /* ContentView.swift */; };
 		9255313E2B7DA20300466ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9255313D2B7DA20300466ADE /* Assets.xcassets */; };
 		925531412B7DA20400466ADE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925531402B7DA20400466ADE /* Preview Assets.xcassets */; };
+		EF47FB1D2D8368D700DC8252 /* StyleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47FB1C2D8368D100DC8252 /* StyleProtocol.swift */; };
+		EF47FB202D83696100DC8252 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47FB1F2D83695D00DC8252 /* TextStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		9255313B2B7DA20100466ADE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9255313D2B7DA20300466ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		925531402B7DA20400466ADE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF47FB1C2D8368D100DC8252 /* StyleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleProtocol.swift; sourceTree = "<group>"; };
+		EF47FB1F2D83695D00DC8252 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		925531382B7DA20100466ADE /* StandfordSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EF47FB1B2D8368C700DC8252 /* DS */,
 				925531392B7DA20100466ADE /* StandfordSwiftUIApp.swift */,
 				9255313B2B7DA20100466ADE /* ContentView.swift */,
 				9255313D2B7DA20300466ADE /* Assets.xcassets */,
@@ -65,6 +70,23 @@
 				925531402B7DA20400466ADE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF47FB1B2D8368C700DC8252 /* DS */ = {
+			isa = PBXGroup;
+			children = (
+				EF47FB1E2D83695300DC8252 /* Text */,
+				EF47FB1C2D8368D100DC8252 /* StyleProtocol.swift */,
+			);
+			path = DS;
+			sourceTree = "<group>";
+		};
+		EF47FB1E2D83695300DC8252 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				EF47FB1F2D83695D00DC8252 /* TextStyle.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF47FB202D83696100DC8252 /* TextStyle.swift in Sources */,
+				EF47FB1D2D8368D700DC8252 /* StyleProtocol.swift in Sources */,
 				9255313C2B7DA20100466ADE /* ContentView.swift in Sources */,
 				9255313A2B7DA20100466ADE /* StandfordSwiftUIApp.swift in Sources */,
 			);
@@ -284,7 +308,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -314,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

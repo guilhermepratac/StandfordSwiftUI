@@ -13,7 +13,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            cards
+            ScrollView {
+                cards
+            }
             cardCountAdjusters
             
         }
@@ -27,6 +29,7 @@ struct ContentView: View {
             
             ForEach(0..<cardCount, id: \.self) { index in
                 CardView(content: emojis[index], isFaceUp: true)
+                    .aspectRatio( 2/3,contentMode: .fit)
             }
         }
         .foregroundColor(.orange)
